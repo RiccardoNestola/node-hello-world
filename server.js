@@ -25,7 +25,7 @@ function getRandomPhrases() {
 const port = process.env.PORT || 3000;
 
 const server = http.createServer(function (req, res) {
-    res.writeHead(200, { "Content-Type": "text/html" });
+    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     const randomPhrases = getRandomPhrases();
     res.end(`
     <h1>Le migliori frasi di Lucio Battisti</h1>
